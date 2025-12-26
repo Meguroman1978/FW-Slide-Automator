@@ -1,0 +1,5 @@
+{
+  "name": "Sigma Data Report Mapper",
+  "description": "A high-efficiency data transformation tool designed to map Sigma JSON exports to standardized reporting templates for Google Sheets. Features AI-powered field mapping and one-click copy-to-clipboard functionality.",
+  "requestFramePermissions": []
+}
