@@ -103,8 +103,9 @@ const App: React.FC = () => {
     try {
       await generateReportPPTX(datasets, allMappings);
     } catch (error) {
-      console.error(error);
-      alert("レポートの生成中にエラーが発生しました。");
+      console.error("PPTX Generation Error:", error);
+      const errorMessage = error instanceof Error ? error.message : String(error);
+      alert(`レポートの生成中にエラーが発生しました。\n\n詳細: ${errorMessage}`);
     } finally {
       setIsLoading(false);
     }
